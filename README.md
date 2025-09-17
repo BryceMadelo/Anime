@@ -39,40 +39,40 @@ A PHP Laravel-based web application for managing personal anime lists. Users can
 ## Setup Instructions
 
 1. **Clone the repository**
-   git clone https://github.com/YOUR_USERNAME/anime-club-dashboard.git
-   cd anime-club-dashboard
+- git clone https://github.com/YOUR_USERNAME/anime-club-dashboard.git
+- cd anime-club-dashboard
    
 2. **Install PHP dependencies**
-   composer install
+- composer install
 
 3. **Install frontend dependencies**
-   npm install
-   npm run dev
+- npm install
+- npm run dev
    
 4. **Set up environment file**
-   cp .env.example .env
+- cp .env.example .env
 
-   Update .env with your database and app settings:
-   APP_NAME="Anime Club"
-   APP_URL=http://localhost
-   DB_CONNECTION=mysql
-   DB_HOST=127.0.0.1
-   DB_PORT=3306
-   DB_DATABASE=anime_club
-   DB_USERNAME=root
-   DB_PASSWORD=
+**Update .env with your database and app settings:**
+- APP_NAME="Anime Club"
+- APP_URL=http://localhost
+- DB_CONNECTION=mysql
+- DB_HOST=127.0.0.1
+- DB_PORT=3306
+- DB_DATABASE=anime_club
+- DB_USERNAME=root
+- DB_PASSWORD=
    
 5. **Generate application key**
-   php artisan key:generate
+- php artisan key:generate
 
 
 6. **Run database migrations**
-   php artisan migrate
+- php artisan migrate
 
 7. **Start the development server**
-   php artisan serve
+- php artisan serve
 
-   Visit http://127.0.0.1:8000 in your browser.
+- Visit http://127.0.0.1:8000 in your browser.
 
 
 ## Author
