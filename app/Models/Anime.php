@@ -31,6 +31,7 @@ class Anime extends Model
         'title',
         'genre',
         'episodes',
+        'watched_episodes',
         'status',
         'user_id',
     ];

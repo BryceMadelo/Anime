@@ -51,7 +51,8 @@ class AnimeController extends Controller
         $request->validate([
             'title' => 'required|string|max:255',
             'genre' => 'required|string|max:255',
-            'episodes' => 'nullable|integer|min:1',
+            'episodes' => 'required|integer|min:1',
+            'watched_episodes' => 'nullable|integer|min:0',
             'status' => 'required|in:Watching,Completed,Plan to Watch',
         ]);
 
@@ -61,7 +62,7 @@ class AnimeController extends Controller
             abort(403);
         }
 
-        $user->animes()->create($request->only('title', 'genre', 'episodes', 'status'));
+        $user->animes()->create($request->only('title', 'genre', 'episodes', 'watched_episodes', 'status'));
 
         return redirect()->route('animes.index')->with('success', 'Anime added successfully.');
     }
@@ -102,10 +103,11 @@ class AnimeController extends Controller
             'title' => 'required|string|max:255',
             'genre' => 'required|string|max:255',
             'episodes' => 'nullable|integer|min:1',
+            'watched_episodes' => 'nullable|integer|min:0',
             'status' => 'required|in:Watching,Completed,Plan to Watch',
         ]);
 
-        $anime->update($request->only('title', 'genre', 'episodes', 'status'));
+        $anime->update($request->only('title', 'genre', 'episodes', 'watched_episodes','status'));
 
         return redirect()->route('animes.index')->with('success', 'Anime updated successfully.');
     }
