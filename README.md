@@ -31,7 +31,7 @@ A PHP Laravel-based web application for managing personal anime lists. Users can
 - PHP 8+
 - Composer
 - Laravel 10+
-- MySQL / MariaDB
+- MySQL
 - Node.js & NPM (for TailwindCSS build, optional)
 
 ---
@@ -40,7 +40,7 @@ A PHP Laravel-based web application for managing personal anime lists. Users can
 
 1. **Clone the repository**
 - git clone https://github.com/BryceMadelo/Anime.git
-- cd to the folder location
+- cd your-repo
    
 2. **Install PHP dependencies**
 - composer install
