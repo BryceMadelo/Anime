@@ -6,14 +6,15 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-    /**
-     * Run the migrations.
-     */
     public function up(): void
     {
         Schema::table('readings', function (Blueprint $table) {
-            $table->integer('current_chapter')->default(0);
-            $table->integer('total_chapters')->nullable();
+            if (!Schema::hasColumn('readings', 'current_chapter')) {
+                $table->integer('current_chapter')->default(0);
+            }
+            if (!Schema::hasColumn('readings', 'total_chapters')) {
+                $table->integer('total_chapters')->nullable();
+            }
         });
     }
 
@@ -23,5 +24,5 @@ return new class extends Migration
             $table->dropColumn(['current_chapter', 'total_chapters']);
         });
     }
-
 };
+
