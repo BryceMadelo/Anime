@@ -12,17 +12,16 @@ A PHP Laravel-based web application for managing personal anime lists. Users can
 - Session management to keep users logged in securely.
 
 ### Anime Management (CRUD)
-- **Create**: Add new anime to your list.
-- **Read**: View all your anime in a table on the dashboard.
-- **Update**: Edit anime details.
-- **Delete**: Remove anime with confirmation prompts.
+- **Create**: Add new anime/webtoon to your list.
+- **Read**: View all your anime/webtoon in a table on the dashboard.
+- **Update**: Edit anime/webtoon details.
+- **Delete**: Remove anime/webtoon with confirmation prompts.
 
 ### Profile
 - Edit and update your user profile.
 
 ### Frontend
 - Clean and responsive UI built with TailwindCSS.
-- Fun anime-inspired dashboard layout.
 
 ---
 
@@ -32,7 +31,7 @@ A PHP Laravel-based web application for managing personal anime lists. Users can
 - Composer
 - Laravel 10+
 - MySQL
-- Node.js & NPM (for TailwindCSS build, optional)
+- Node.js & NPM (for TailwindCSS build)
 
 ---
 
@@ -78,6 +77,3 @@ A PHP Laravel-based web application for managing personal anime lists. Users can
 
 ## Author
 Bryce Christian Madelo
-   
-
->>>>>>> 6ab0c5a07f8aa8e85dc322265aaf7d8531a50c48
