@@ -40,7 +40,7 @@ A PHP Laravel-based web application for managing personal anime lists. Users can
 
 1. **Clone the repository**
 - git clone https://github.com/BryceMadelo/Anime.git
-- cd to file location
+- cd to the folder location
    
 2. **Install PHP dependencies**
 - composer install
